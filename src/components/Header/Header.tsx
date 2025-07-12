@@ -1,5 +1,6 @@
 import { Cart } from "../Cart/Cart.tsx"
 import s from "./Header.module.css"
+
 export const Header = () => {
   return (
     <div className={s.headerWrapper}>
