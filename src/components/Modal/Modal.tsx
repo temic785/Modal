@@ -2,6 +2,7 @@ import s from "./Modal.module.css"
 import { ReactNode } from "react"
 import { createPortal } from "react-dom"
 
+
 type Props = {
   open: boolean
   onClose?: () => void

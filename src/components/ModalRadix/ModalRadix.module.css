@@ -8,18 +8,31 @@
 .Content {
     background-color: white;
     border-radius: 6px;
+    box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
+    hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90vw;
-    max-width: 500px;
     max-height: 85vh;
     padding: 25px;
     animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+
     &:focus {
         outline: none;
     }
+}
+
+.sm {
+    width: 367px;
+}
+
+.md {
+    width: 532px;
+}
+
+.lg {
+    width: 764px;
 }
 
 .Title {
@@ -48,6 +61,7 @@
     font-weight: 500;
     height: 35px;
     user-select: none;
+
     &:focus:not(:focus-visible) {
         outline: 0;
     }
@@ -61,9 +75,11 @@
         background-color: var(--violet-4);
         color: var(--violet-12);
         outline-color: var(--violet-6);
+
         &:hover {
             background-color: var(--mauve-3);
         }
+
         &:focus {
             box-shadow: 0 0 0 2px black;
         }
@@ -73,6 +89,7 @@
         background-color: var(--green-4);
         color: var(--green-11);
         outline-color: var(--green-7);
+
         &:hover {
             background-color: var(--green-5);
         }
@@ -93,6 +110,7 @@
     top: 10px;
     right: 10px;
     background-color: var(--gray-3);
+
     &:hover {
         background-color: var(--violet-4);
     }
@@ -131,6 +149,7 @@
     color: var(--violet-11);
     box-shadow: 0 0 0 1px var(--violet-7);
     height: 35px;
+
     &:focus {
         box-shadow: 0 0 0 2px var(--violet-8);
     }
