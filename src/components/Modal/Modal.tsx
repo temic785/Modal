@@ -2,14 +2,18 @@ import s from "./Modal.module.css"
 import { ReactNode } from "react"
 import { createPortal } from "react-dom"
 
-
 type Props = {
+  /** The controlled open state of the Modal */
   open: boolean
+  /** Close modal handler */
   onClose?: () => void
+  /** Modal title */
   modalTitle: string
+  /** Content to be rendered inside the modal body */
   children: ReactNode
 }
 
+/** Ui kit ModalRadix component */
 export const Modal = ({ onClose, open, modalTitle, children }: Props) => {
   return (
     <>
